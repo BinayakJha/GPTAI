@@ -9,8 +9,7 @@ load_dotenv()
 CONFIG_PATH = os.path.expanduser('~/.git_ai_config')
 
 class ConfigManager:
-    def __init__(self):
-        self.token = self.load_token
+
 
     def save_token(self, token):
         with open(CONFIG_PATH, 'w') as config_file:

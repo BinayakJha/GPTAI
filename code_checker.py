@@ -9,9 +9,6 @@ load_dotenv()
 
 class CodeChecker:
     def __init__(self, repo_path):
-        self.repo_path = repo_path
-        self.api_key = os.getenv('OPENROUTER_API_KEY')
-        self.gemini_api_key = os.getenv('GEMINI_API_KEY')
 
     def check_code(self):
         print(f'Checking code quality and security for repository at {self.repo_path}...')
